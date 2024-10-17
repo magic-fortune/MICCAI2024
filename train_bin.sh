@@ -1,0 +1,13 @@
+python train_bin.py \
+--exp "bin_no_1/AdamW/15k/e0.5/t0.75/no_cutmix/s1_to_s2/ker7_off15" \
+--conf_thresh 0.75 \
+--label_num 30 \
+--max_iterations 30000 \
+--optimizer AdamW \
+--base_lr 0.01 \
+--eta 0.5 \
+--s1_to_s2 \
+--deterministic 0 \
+--batch_size 2 \
+--corr_match_type kl \
+--temperature 1.5

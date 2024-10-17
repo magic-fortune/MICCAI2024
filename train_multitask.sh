@@ -1,0 +1,14 @@
+python train_multitask.py \
+--exp "ROI_expand_kernel_workshop/MultiTask/AdamW/20k/e0.75/t0.70/no_cutmix/s1_to_s2/ker5_off20/scanet" \
+--conf_thresh 0.75 \
+--label_num 30 \
+--max_iterations 20000 \
+--optimizer AdamW \
+--base_lr 0.01 \
+--eta 0.75 \
+--s1_to_s2 \
+--deterministic 0 \
+--batch_size 2 \
+--corr_match_type kl \
+--temperature 1.5 \
+--n_filters 16
